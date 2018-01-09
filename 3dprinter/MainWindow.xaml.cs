@@ -40,6 +40,8 @@ namespace _3dprinter
         {
             InitializeComponent();
             DataReceivedDelegate = FillDataReceivedTextBox;
+            ConnectionWindow = new Connection_Window();
+            ConnectionWindow.Show();
         }
 
         private void ConnectMenuItem_Click(object sender, RoutedEventArgs e)
@@ -95,5 +97,20 @@ namespace _3dprinter
             CoordsCalc CC = new CoordsCalc();
             CoordsQueue = CC.GetCircle();
         }
+
+        private void MinButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (null != Connection)
+            {
+                Connection.Close();
+            }
+            Close();
+        }
+
     }
 }

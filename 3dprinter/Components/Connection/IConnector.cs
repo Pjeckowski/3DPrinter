@@ -6,6 +6,7 @@ namespace _3dprinter.Components.Connection
     {
         bool Send(string data);
         string Receive();
+        void Close();
         event EventHandler<string> DataReceivedEvent;
     }
 }

@@ -92,11 +92,11 @@ namespace _3dprinter.Windows
             else
             StopBits_CB.SelectedIndex=1;
 
-            DataBits_CB.MouseEnter += Combobox_MouseEnter;
-            Parity_CB.MouseEnter += Combobox_MouseEnter;
-            Port_CB.MouseEnter += Combobox_MouseEnter;
-            Speed_CB.MouseEnter += Combobox_MouseEnter;
-            StopBits_CB.MouseEnter += Combobox_MouseEnter;
+            //DataBits_CB.MouseEnter += Combobox_MouseEnter;
+            //Parity_CB.MouseEnter += Combobox_MouseEnter;
+            //Port_CB.MouseEnter += Combobox_MouseEnter;
+            //Speed_CB.MouseEnter += Combobox_MouseEnter;
+            //StopBits_CB.MouseEnter += Combobox_MouseEnter;
 
             DataBits_CB.MouseLeave += Combobox_MouseLeave;
             Parity_CB.MouseLeave += Combobox_MouseLeave;
@@ -178,29 +178,29 @@ namespace _3dprinter.Windows
             this.Close();
         }
 
-        private void Combobox_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (sender.Equals(DataBits_CB))
-            {
-                DataBits_CB.Foreground = new SolidColorBrush(Colors.Black);
-            }
-            if (sender.Equals(Parity_CB))
-            {
-                Parity_CB.Foreground = new SolidColorBrush(Colors.Black);
-            }
-            if (sender.Equals(Port_CB))
-            {
-                Port_CB.Foreground = new SolidColorBrush(Colors.Black);
-            }
-            if (sender.Equals(Speed_CB))
-            {
-                Speed_CB.Foreground = new SolidColorBrush(Colors.Black);
-            }
-            if (sender.Equals(StopBits_CB))
-            {
-                StopBits_CB.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
+        //private void Combobox_MouseEnter(object sender, MouseEventArgs e)
+        //{
+        //    if (sender.Equals(DataBits_CB))
+        //    {
+        //        DataBits_CB.Foreground = new SolidColorBrush(Colors.Black);
+        //    }
+        //    if (sender.Equals(Parity_CB))
+        //    {
+        //        Parity_CB.Foreground = new SolidColorBrush(Colors.Black);
+        //    }
+        //    if (sender.Equals(Port_CB))
+        //    {
+        //        Port_CB.Foreground = new SolidColorBrush(Colors.Black);
+        //    }
+        //    if (sender.Equals(Speed_CB))
+        //    {
+        //        Speed_CB.Foreground = new SolidColorBrush(Colors.Black);
+        //    }
+        //    if (sender.Equals(StopBits_CB))
+        //    {
+        //        StopBits_CB.Foreground = new SolidColorBrush(Colors.Black);
+        //    }
+        //}
 
         private void Combobox_MouseLeave(object sender, MouseEventArgs e)
         {

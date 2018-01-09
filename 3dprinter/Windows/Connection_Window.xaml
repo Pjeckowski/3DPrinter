@@ -12,14 +12,16 @@
     </WindowChrome.WindowChrome>
 
     <Grid x:Name="WindowGrid" Background="#242424">
-        <Button x:Name="Close_Button" WindowChrome.IsHitTestVisibleInChrome="True" Background="Red" Content="X" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="260,6,0,0" VerticalAlignment="Top" Width="22" Click="Close_Button_Click"/>
+        
+        <Button x:Name="Close_Button" WindowChrome.IsHitTestVisibleInChrome="True" Background="Red" Content="X" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="268,6,0,0" VerticalAlignment="Top" Width="22" Click="Close_Button_Click"/>
         <Label x:Name="Tittle_label" Content="Connection Settings" Foreground="White" HorizontalAlignment="Left" Margin="5,3,0,0" FontFamily="Tahoma" FontWeight="SemiBold" VerticalAlignment="Top"/>
         <Grid x:Name="ControlsGrid" Margin="10,30,10,10" Background="#017BCD">
-            <ComboBox Foreground="White" Background="Red" x:Name="Port_CB" HorizontalAlignment="Left" Margin="95,25,0,0" VerticalAlignment="Top" Width="120"/>
-            <ComboBox Foreground="White" Background="#242424" x:Name="Speed_CB" HorizontalAlignment="Left" Margin="95,65,0,0" VerticalAlignment="Top" Width="120"/>
-            <ComboBox Foreground="White" Background="#242424" x:Name="DataBits_CB" HorizontalAlignment="Left" Margin="95,105,0,0" VerticalAlignment="Top" Width="120"/>
-            <ComboBox Foreground="White" Background="#242424" x:Name="Parity_CB" HorizontalAlignment="Left" Margin="95,145,0,0" VerticalAlignment="Top" Width="120"/>
-            <ComboBox Foreground="White" Background="#242424" x:Name="StopBits_CB" HorizontalAlignment="Left" Margin="95,185,0,0" VerticalAlignment="Top" Width="120"/>
+
+            <ComboBox Style="{DynamicResource ComboBoxStyle1}" Foreground="White" Background="#242424" x:Name="Port_CB" HorizontalAlignment="Left" Margin="95,25,0,0" VerticalAlignment="Top" Width="120" />
+            <ComboBox Style="{DynamicResource ComboBoxStyle1}" Foreground="White" Background="#242424" x:Name="Speed_CB" HorizontalAlignment="Left" Margin="95,65,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox Style="{DynamicResource ComboBoxStyle1}" Foreground="White" Background="#242424" x:Name="DataBits_CB" HorizontalAlignment="Left" Margin="95,105,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox Style="{DynamicResource ComboBoxStyle1}" Foreground="White" Background="#242424" x:Name="Parity_CB" HorizontalAlignment="Left" Margin="95,145,0,0" VerticalAlignment="Top" Width="120"/>
+            <ComboBox Style="{DynamicResource ComboBoxStyle1}" Foreground="White" Background="#242424" x:Name="StopBits_CB" HorizontalAlignment="Left" Margin="95,185,0,0" VerticalAlignment="Top" Width="120"/>
             <Label Content="Port:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
             <Label Content="Speed:" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top"/>
             <Label Content="Data bits:" HorizontalAlignment="Left" Margin="30,100,0,0" VerticalAlignment="Top"/>
